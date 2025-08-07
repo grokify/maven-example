@@ -80,3 +80,21 @@ mvn install
 ```
 
 This example demonstrates all the concepts covered in the Maven tutorial and provides a solid foundation for understanding Maven builds.
+
+## Successful Build
+
+When running `mvn clean verify`, the compiled JARs will be placed into the `target` directory.
+
+The results needs to include two sets of lines that indicate success. First is the overall success mesage as follows.
+
+```
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+```
+
+Additionally, the output must not include the following warning indicating that no code was included.
+
+```
+[WARNING] JAR will be empty - no content was marked for inclusion!
+```
